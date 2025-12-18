@@ -44,7 +44,7 @@
 将你的 Xmind 文件导出为 **Markdown** (`.md`) 格式。
 
 ### 第 2 步：准备文件
-将导出的 Markdown 文件放入本项目中的 `xminds/` 目录下。
+将导出的 Markdown 文件放入本项目中的主目录下。
 
 ### 第 3 步：运行 Agent
 1.  打开你的终端或 IDE（如 Cursor, VS Code）。
@@ -52,7 +52,7 @@
 3.  滚动到 **Input Cell**（通常是最后一个单元格）。
 4.  修改文件名变量，使其匹配你上传的文件：
     ```python
-   with open('xminds/my_new_feature.md', 'r', encoding='utf-8') as file:
+   with open('my_new_feature.md', 'r', encoding='utf-8') as file:
     ```
 5.  点击 **Run All** (运行所有单元格)。
 
