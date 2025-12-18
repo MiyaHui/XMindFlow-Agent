@@ -44,7 +44,7 @@ Customize the `prd_template.md` file. The agent will strictly follow this struct
 Export your Xmind file as **Markdown** (`.md`).
 
 ### Step 2: Prepare Directory
-Move your exported markdown file into the `xminds/` directory in this project.
+Move your exported markdown file into the main directory in this project.
 
 ### Step 3: Run the Agent
 1.  Open your terminal or IDE (e.g., Cursor, VS Code).
@@ -52,7 +52,7 @@ Move your exported markdown file into the `xminds/` directory in this project.
 3.  Navigate to the **Input Cell** (usually the last cell).
 4.  Update the filename variable to match your uploaded file:
     ```python
-    with open('xminds/my_new_feature.md', 'r', encoding='utf-8') as file:
+    with open('my_new_feature.md', 'r', encoding='utf-8') as file:
     ```
 5.  Click **Run All**.
 
