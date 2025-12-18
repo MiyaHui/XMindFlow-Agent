@@ -21,7 +21,7 @@ Turn your raw Xmind notes into a full product package:
 *   ✅ **High-Fidelity Prototypes**: Generates renderable HTML/CSS prototypes using modern design systems.
 *   ✅ **Custom PRDs**: Writes detailed Product Requirements Documents based on **your** specific templates.
 *   ✅ **Interactive Specs**: Automatically generates an annotated "Hand-off" mode where developers can click elements to see logic and rules.
-*   ✅ **Multi-LLM Support**: Mix and match models (OpenAI, Anthropic, etc.) within the same pipeline for optimal results.
+*   ✅ **Multi-LLM Support**: Mix and match models (OpenAI, Qwen, DeepSeek, etc.) within the same pipeline for optimal results.
 
 ---
 
