@@ -1,0 +1,103 @@
+:root {
+  --accent: #6366f1;
+  --accent-secondary: #a855f7;
+  --accent-tertiary: #06b6d4;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 4rem 1rem;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.upload-area {
+  @apply glass-card p-12 text-center cursor-pointer transition-all duration-500 border-dashed border-2 hover:border-indigo-500/50 hover:bg-white/10;
+}
+
+.upload-area.active {
+  @apply border-indigo-500 bg-indigo-500/10 scale-[1.02];
+}
+
+.step-card {
+  @apply glass-card p-6 flex flex-col items-center text-center transition-all duration-300 hover:translate-y-[-4px] hover:bg-white/10;
+}
+
+.result-card {
+  @apply glass-card overflow-hidden h-[500px] flex flex-col;
+}
+
+.result-header {
+  @apply px-6 py-4 font-semibold flex items-center gap-2 border-b border-white/10;
+}
+
+.result-body {
+  @apply p-6 flex-grow overflow-y-auto custom-scrollbar;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20;
+}
+
+/* Transitions */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.prose {
+  @apply text-slate-300 leading-relaxed;
+}
+
+.prose h1, .prose h2, .prose h3 {
+  @apply text-white font-bold mt-6 mb-4;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose ul, .prose ol {
+  @apply mb-4 pl-6;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose code {
+  @apply bg-white/10 px-1.5 py-0.5 rounded text-indigo-300;
+}
+
+.prose pre {
+  @apply bg-black/30 p-4 rounded-xl mb-4 overflow-x-auto border border-white/5;
+}
